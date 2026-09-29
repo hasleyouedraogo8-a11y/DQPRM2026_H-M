@@ -1,0 +1,62 @@
+Exercice 3 - Dosimétrie
+
+Contexte
+Radioembolisation dans le traitement d'un cancer hépatique à l'aide de microsphères de verre marquées à l' 90Y .
+
+Planification de l'activité à administrer à l'aide d'une acquisition tomographique réalisée au  99mTc -MAA
+
+Déterminer l'activité d' 90Y  pour délivrer une dose absorbée limite de 120 Gy au lobe hépatique contenant la tumeur
+Déterminer la dose absorbée à la tumeur
+Pour illustrer le propos de l'impact de la dosimétrie prévisionnelle dans le traitement des hépatocarcinome, voir ici.
+
+Modéle de partionnement
+Ho et al. ont défini un modèle de calcul basée sur la connaissance de la répartition de l'activité dans le foie après la perfusion des microsphères radioactives. Le calcul de la dose absorbée aux volumes d'intérêt est estimée par la méthologie du MIRD.
+
+L'activité perfusée dans le foie se répartie dans lui-même et les poumons s'il existe un shunt entre ce premier et ces derniers.
+
+L'activité dans les poumons est estimée par  AL=Ainj.×L100 
+L pourcentage de shunt pulmonaire
+L'activité dans le foie comprenant la partie saine ( AN ) et tumorale ( AT ) est estimée par  AN+AT=Ainj.(1−L100) 
+Le rapport tumeur/foie sain  r=ATmTANmN  peut être estimé à partir des pseudo-concentrations d'activité mesurées par la segmentation dans la tumeur et le foie sain. A l'aide de l'équation précédente, on peut ensuite exprimer les activités dans le foie sain ( AN ) et dans la tumeur ( AT ) en fonction de ce rapport et de  Ainj. .
+Rappels
+Equation du MIRD
+D¯k←h=∑hA~h×Sk←h 
+
+où  A~h  est l'activité cumulée dans la source i.e: le nombre total de désintégration dans la source h et  Sk←h  le facteur S liant la source h à la cible k.
+
+Equation simplifiée
+Dans le cas la cas d'une radioembolisation,
+
+toute l'activité injectée est piègée dans le foie (si pas de shunt pulmonaire)
+seule la décroissance physique du radionucléide intervient (pas d'élimination biologique du traceur).
+Cela simplifie le calcul
+
+D¯foie=A(0)foie×Tphys.ln2×Sfoie←foie 
+
+Dans le cas où on utilise un radionucléide qui émet uniquement des émissions  β− , la dernière équation est équivalente à :
+
+D¯foie=A(0)foie×Tphys.×Δln2×mfoie 
+
+où  Δ  représente l'énergie totale émise par transition et  mfoie  la masse du foie.
+
+En réorganisant les équations, on obtient l'activité à injecter pour une dose absorbée déterminée
+
+A(0)foie=D¯foie×mfoie×ln2Tphys.×Δ 
+
+Dans le cadre d'un traitement par radioembolisation avec des µ-sphères de verre, on souhaite délivrer une dose absorbée de 120 Gy dans l'ensemble du foie perfusé.
+
+Question 1. Lire avec Pandas le fichier Table.csv contenu dans le dossier data qui contient les valeurs des différents volumes d'intérêt ainsi que les activités dans ces volumes (attention au format du séparateur de colonnes). La première colonne sera utilisée comme index des lignes.
+
+Question 2. Ajouter une colonne au tableau avec les masses des différents volumes d'intérêt (on prendra comme valeur de masse volumique  ρ=1.03 g/cm3 )
+
+Question 3. Déterminer l'activité à injecter dans le lobe droit pour atteindre cette dose absorbée limite en utilisant l'équation simplifiée du MIRD
+
+Question 4. Déterminer la dose absorbée à la tumeur pour cette activité injectée
+
+NB. Il n'y a pas eu de shunt pulmonaire identifié durant cette procédure
+
+Données :
+
+Période de l'yttrium 90 : 64,05  heures 
+Energie totale émise par transition : 0.9336  MeVBq.s 
+On considère que les tissus hépatiques et la tumeur ont une masse volumique égale à 1.03  gcm3
