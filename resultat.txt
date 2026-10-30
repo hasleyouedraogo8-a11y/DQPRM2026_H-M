@@ -1,0 +1,4 @@
+L'activité à injecter est de 2.01 GBq pour 120 Gy au lobe droit.
+Le rapport des concentrations est estimée à 3.50
+Les activités dans le foie perfusé et la tumeur sont 1923.47 et 89.75 MBq, respectivement
+La dose à la tumeur est 49.59 Gy
