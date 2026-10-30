@@ -1,3 +1,4 @@
+Ajout de questions
 Exercice 3 - Dosimétrie
 
 Contexte
@@ -60,3 +61,14 @@ Données :
 Période de l'yttrium 90 : 64,05  heures 
 Energie totale émise par transition : 0.9336  MeVBq.s 
 On considère que les tissus hépatiques et la tumeur ont une masse volumique égale à 1.03  gcm3
+
+
+Question 1. Lire avec Pandas le fichier Table.csv contenu dans le dossier data qui contient les valeurs des différents volumes d'intérêt ainsi que les activités dans ces volumes (attention au format du séparateur de colonnes). La première colonne sera utilisée comme index des lignes.
+
+Question 2. Ajouter une colonne au tableau avec les masses des différents volumes d'intérêt (on prendra comme valeur de masse volumique  ρ=1.03 g/cm3 )
+
+Question 3. Déterminer l'activité à injecter dans le lobe droit pour atteindre cette dose absorbée limite en utilisant l'équation simplifiée du MIRD
+
+Question 4. Déterminer la dose absorbée à la tumeur pour cette activité injectée
+
+NB. Il n'y a pas eu de shunt pulmonaire identifié durant cette procédure
