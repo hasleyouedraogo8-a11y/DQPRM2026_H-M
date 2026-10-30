@@ -1,0 +1,6 @@
+Segment	Nombre de voxels [voxels]	Volume [mm3]	Volume [cm3]	Minimum	Maximum	Mean	Median	Standard Deviation
+foie_total	13024	1124660	1124.66	1	8735	1153.24	1146	941.664
+tum_dome_CT	125	10794.2	10.7942	1651	8735	3923.5	3629	1466.79
+lobe_droit	9375	809562	809.562	31	8735	1526.33	1384	847.588
+tum_dome_SPECT	114	9844.27	9.84427	4163	8735	5341.22	5034	980.795
+lobe_gauche	3653	315448	315.448	1	1955	195.493	117	207.995
