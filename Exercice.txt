@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 Ajout de questions
+=======
+>>>>>>> afba891362e887565fcbc06899cf4f5caa443fd1
 Exercice 3 - Dosimétrie
 
 Contexte
@@ -45,6 +48,7 @@ En réorganisant les équations, on obtient l'activité à injecter pour une dos
 A(0)foie=D¯foie×mfoie×ln2Tphys.×Δ 
 
 Dans le cadre d'un traitement par radioembolisation avec des µ-sphères de verre, on souhaite délivrer une dose absorbée de 120 Gy dans l'ensemble du foie perfusé.
+<<<<<<< HEAD
 
 Question 1. Lire avec Pandas le fichier Table.csv contenu dans le dossier data qui contient les valeurs des différents volumes d'intérêt ainsi que les activités dans ces volumes (attention au format du séparateur de colonnes). La première colonne sera utilisée comme index des lignes.
 
@@ -72,3 +76,5 @@ Question 3. Déterminer l'activité à injecter dans le lobe droit pour atteindr
 Question 4. Déterminer la dose absorbée à la tumeur pour cette activité injectée
 
 NB. Il n'y a pas eu de shunt pulmonaire identifié durant cette procédure
+=======
+>>>>>>> afba891362e887565fcbc06899cf4f5caa443fd1
